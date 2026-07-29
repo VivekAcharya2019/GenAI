@@ -1,0 +1,13 @@
+Langchain provides special library for conversation chats = ChatOllama
+
+SystemMessages = sent with all msgs, no modification of system msg while summarising/compacting all conversation, always attached to the begining of the input prompt, There can be multiple system message for a perticular task but that is not recommended
+
+ChatPromptTemplate
+MessagePlaceHolder
+
+Different Prompting techniques
+    1. Simple
+    2. Role based
+    3. Few shot- with example 
+    4. Delimitted - with seperator
+    5. Instruction prompt - with Instruction
