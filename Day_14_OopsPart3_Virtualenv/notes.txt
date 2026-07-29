@@ -1,0 +1,29 @@
+## Virtual Environment
+    ## Globally Install virtualenv
+    $ python -m pip install virtualenv
+
+# create virtual Environment for a project
+    $ python -m virtualenv .venv
+
+# activate virtual Environment
+    ## windows -- command prompt
+    $ .\.venv\Scripts\activate
+
+    ## Linux 
+    $ source .\.venv\Scripts\activate
+
+# Deactivate
+    $ deactivate 
+
+# Installing packages inside virtualenv 
+    ## must see (.venv)
+    $ python -m pip install langchain
+
+# To uninstall single library
+    $ python -m pip uninstall langchain 
+
+# List all libraries installed in given virtual env and save it in file 
+    $ python -m pip freeze > requirements.txt
+
+# Install all packages inside given requirements.txt 
+    $ python -m pip install -r requirements.txt

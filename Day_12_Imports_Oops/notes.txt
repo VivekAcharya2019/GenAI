@@ -1,0 +1,22 @@
+if __name__ == "__main__": means:
+“Run this block only when this file is executed directly.”
+
+__name__ is a special built-in variable.
+When a Python file is executed directly, __name__ is set to "__main__".
+When the file is imported into another file, __name__ is set to the file’s name, such as "myfile".
+
+`__init__.py` is a special Python file that makes a folder into a package, so its modules can be imported.
+
+## Install Library 
+
+$ pip install langchain 
+$ python3 -m pip install langchain 
+
+
+## Uninstall Library 
+
+$ pip uninstall langchain 
+$ python3 -m pip uninstall langchain 
+
+## OOPS
+    

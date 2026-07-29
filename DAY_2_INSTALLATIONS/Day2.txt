@@ -1,0 +1,10 @@
+Installations :
+
+python - https://www.python.org/downloads/release/python-3141/
+
+VS Code - https://code.visualstudio.com/download
+
+jupyter lab - python -m pip install jupyterlab
+
+run jupyterlab locally - jupyter lab
+

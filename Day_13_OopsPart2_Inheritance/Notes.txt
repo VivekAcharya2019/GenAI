@@ -1,0 +1,11 @@
+## Inheritence
+
+### Single Inheritence 
+call init from child class or super().__init__()
+
+Method resolution order
+car2.__mro__
+
+### Multiple Inheritence 
+
+Class Employee(Department, Developer)
