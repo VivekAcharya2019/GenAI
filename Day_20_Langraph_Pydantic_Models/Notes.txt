@@ -1,0 +1,11 @@
+Langraph : build on concept of state machine, how we create state, update state
+    ex: Dictionary or Pydentic class/object
+Why pydentic instead of dictionary object?
+    By default in python there is no Type validation. Pydantic class inherits BaseModel from Pydantic lib
+    1. Provides type validation
+    2. Supports type casting for ex : "10" to int
+    3. Mandatory fields, Optional fields, field validation(max length etc), Can create custom data validator
+    4. Supports description for each fields
+    5. Convert object to Dictonary and Json 
+Node : 
+Edges : Connects Nodes
