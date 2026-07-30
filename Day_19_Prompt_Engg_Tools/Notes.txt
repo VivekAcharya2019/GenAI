@@ -1,0 +1,21 @@
+prompting technique:
+
+6. Chain of thoughts : step by step thinking
+reason and response -> reason -> response -> reason -> final response
+just add "think step by step" at the end of the prompt
+
+7. Self critique technique:
+Add below prompt at the end - 
+    think step by step
+    then review your answer for mistakes
+    Provide correct answer
+
+8. Prompt structure:
+Output strucutre - json, table etc
+
+## Tools
+Tools are simple function with @tool decorateor and with description (called doc string) and parameter data type
+doc string used by LLM when to call this tool
+There is no type casting in python. You can float as well to int parameter, the data type is just for read purpose
+
+How to attach tools to model
