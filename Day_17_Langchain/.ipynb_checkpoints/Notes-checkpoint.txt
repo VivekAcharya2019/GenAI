@@ -1,7 +1,0 @@
-Langchain = to communicate with LLM models, it can using Ollama or bedrock or something else. respective langchain library has to be used. For ollama, langchain_ollama
-also provides prompt template funtionality and output format parser
-
-input = prompt 
-output parser = strucutre format, json, dictionary
-
-prompt template
