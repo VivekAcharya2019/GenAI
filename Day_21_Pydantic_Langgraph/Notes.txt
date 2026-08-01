@@ -1,0 +1,15 @@
+Nested Pdantic Model.
+
+default_factory: 
+    1. In Pydantic, default_factory is a parameter used within Field() to specify a zero-argument callable (like a function, lambda, or class constructor) that executes every time a new instance of the model is created. It tells Pydantic: "Instead of reusing a fixed static value, call this function to generate a fresh, new value right now.
+
+    2. Using default_factory=list or default_factory=dict explicitly communicates to code analyzers and other developers that a clean, independent collection is generated for every object
+
+Langraph
+    1. State - Whiteboard - dictionary or pydantic model
+    2. Node - function based or class based, END is the last Node to be added to the end of the graph
+    3. Edges
+    4. LLM
+
+Why langraph? 
+    when questions need to be sub divided and to be answered step by step
