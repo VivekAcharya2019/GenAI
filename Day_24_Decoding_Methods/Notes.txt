@@ -1,0 +1,35 @@
+How probability is calculated in softmax? 
+    Using Mathematical Formula
+How values are selected after softmax? 
+    Greedy decoding => this bring deterministic charector to the model
+      Pros : 
+      Fast and stable 
+      Fully deterministic
+      Good for factual and structured tasks
+
+      Cons : 
+      Repitative Outputs
+      No creativity 
+
+    Temperature Sampling
+- Gives Non deterministic behaviour to models output 
+- Range 0-2
+
+Low Temperature ( T < 1 ): 
+    --> Distribution becomes sharper 
+    --> Shows some determinstic
+    --> High probabilty tokens dominate 
+
+High Temperature ( T > 1):
+    --> Distribution becomes flatter 
+    --> More Randomness -- verry less deterministic 
+    --> Low probabilty tokens gets more choice 
+
+Top K sampling
+    Pick top k probabilities, then pick RANDOM values from K values => hence high non deterministic.
+    cons : do not know when 
+
+Top P sampling
+    Pick top values whos probability some equal to P. Then pick RANDOM value
+
+First give priority to rewrite the prompt to get the desired value. Then try decoding values
