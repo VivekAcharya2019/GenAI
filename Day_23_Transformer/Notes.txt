@@ -1,0 +1,51 @@
+Transformer
+    1. Every model is build on Transformer architecture. Tranformer is like a brick for any building. Very basic concept for any LLM model.
+2. It is a black box.
+3. Architecture is introduced in 2017 paper "Attention is all you need". This was introduced for language Translation
+
+A) Encoder - Responsibility = Understand the concepts (For tranlsation job, understand English)
+    1. input sequence
+    2. Input embedings - string to numeric values - Converting to machine language (0s and 1s) - Called Tokenization
+        Numbers <-> words mapping are saved = called vocabulry
+        if no word in vocabulary (oov - out of vocabulary) mapped to one number(say 999)
+        vocabulary = unique words from training data
+    3. Positional encoding - Adding positional value to each words
+        a. sequncing positional - has lost of issue
+        b. sin 
+        c. cosine
+        Why positional encoding required?
+        Same word can be at multiple places, but the weightage differ based on the position, so to add weightage to words based on position. 
+        ex: I am learning LLM and Am I learing LLM
+    4. Multi head attention
+        Attention mechanism : 1 attentions will focus on grammer, 1 will focus on tone, wording, spelling etc
+        Build on 3 matrics : Query(what we ask), Key(what we know), Value(what we return)
+        On query -> Find similar value
+        2 mthods to find similarity btw vectors 
+            a. Dot product - Huge value after multiplication, so we normalize values 
+                Normalization - a. device each value by mean/avg value. 
+            b. Cosine similarity
+        vectors are on multiple dimension - min 512
+
+        Attention = Softmax(Q.K^T / √ dk) . V
+        Q.K^T = finding similarity 
+        √ dk = sclaing factor
+        SoftMax = Probabilities 
+
+        Skip connection
+    5. Normalizatin
+    6. Feed forward (Add + Norm) - Only forward direction
+        
+
+B) Decoder - Responsibility = This is my understadning(vector from encoder) generate the output 
+
+    i) Linear - Map last layer nodes of Feed Forward(Add+Norm) to vocabulary words. so the last layer will have nodes of "vocabulary size". Output from Linear layer is called Legits
+ 
+    ii) Softmax layer - Convert values from Linear layer to probabilities. Output from Linear layer is called probabilities
+
+    By applying mathematical formulas on Legits and probabilities we can alter the output values
+
+After this paper people found out that, Model can be created only with Encoder and only with Decoder.
+
+Encoder + Decoder Models (for Translation etc) = Called T5 models
+Encoder only model : For classification, sentence embedding =  BERT Model
+Decoder only Model : GPT, Ollama, Deepseek
