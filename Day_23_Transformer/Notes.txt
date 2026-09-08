@@ -10,8 +10,8 @@ A) Encoder - Responsibility = Understand the concepts (For tranlsation job, unde
         if no word in vocabulary (oov - out of vocabulary) mapped to one number(say 999)
         vocabulary = unique words from training data
     3. Positional encoding - Adding positional value to each words
-        a. sequncing positional - has lost of issue
-        b. sin 
+        a. sequncing positional - has lot of issue
+        b. sine 
         c. cosine
         Why positional encoding required?
         Same word can be at multiple places, but the weightage differ based on the position, so to add weightage to words based on position. 
@@ -22,7 +22,7 @@ A) Encoder - Responsibility = Understand the concepts (For tranlsation job, unde
         On query -> Find similar value
         2 mthods to find similarity btw vectors 
             a. Dot product - Huge value after multiplication, so we normalize values 
-                Normalization - a. device each value by mean/avg value. 
+                Normalization - a. devide each value by mean/avg value. 
             b. Cosine similarity
         vectors are on multiple dimension - min 512
 
