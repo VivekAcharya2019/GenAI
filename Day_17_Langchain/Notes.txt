@@ -1,7 +1,24 @@
 Langchain = to communicate with LLM models, it can using Ollama or bedrock or something else. respective langchain library has to be used. For ollama, langchain_ollama
 also provides prompt template funtionality and output format parser
 
-input = prompt 
-output parser = strucutre format, json, dictionary
+structured parser format 
+    using python libraries not using LLM
 
-prompt template
+help us connect with multiple model provider like google models, antropic, meta, huggingface etc
+
+provides prompt templates
+    PromptTemplate
+    placeholder template
+    chatprompttemplate
+    
+Memory
+provides connectors to store memory into DB.. redis.. mongo.. postreSQL
+short term - chat specific data
+long term - available for all conversation - user specific data, etc - 
+
+LCEL - Langchain Expression language
+    using pipeline 
+    model | prompt | outputparser | pushtoUI | etc..  = each node is called runnable here
+
+Provides framework to create tools using @tool, tools cannot be added to OllamaLLm, it can be added to chatOllama
+    
