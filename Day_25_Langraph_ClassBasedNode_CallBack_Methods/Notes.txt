@@ -1,0 +1,15 @@
+callback:
+    what:In LangGraph, a CallbackHandler is basically a way to observe what is happening inside your graph while it executes.
+Think of it as an event listener / interceptor for LangChain/LangGraph execution.
+    Why:
+You may want to know:
+- Which node is currently running?
+- Which LLM was called?
+- How long did it take?
+- What tokens were generated?
+- Which tool was called?
+- What arguments were passed?
+- Did an LLM/tool fail?
+- What is the trace/run ID?
+- How much did the execution cost?
+Callbacks give you hooks into these events.
