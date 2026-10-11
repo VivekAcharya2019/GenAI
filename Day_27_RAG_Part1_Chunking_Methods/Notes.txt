@@ -1,0 +1,9 @@
+ChatPromptTemplate
+    what:
+    why:
+
+Chunking methods:
+Fixed size
+Fixed size with overlap
+Sentence based 
+Recursive char text splitting (most widly used) - split text Recursively using list of separator until chunk size is reached. separators = ["\n\n", "\n", " "]
