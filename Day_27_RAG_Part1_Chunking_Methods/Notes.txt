@@ -1,6 +1,4 @@
 ChatPromptTemplate
-    what:
-    why:
 
 Chunking methods:
 Fixed size

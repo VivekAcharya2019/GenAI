@@ -1,0 +1,12 @@
+NumPy (Numerical Python) is a Python library used for efficient numerical computing. It provides powerful data structures and mathematical operations for working with numbers, arrays, matrices, and multidimensional data.
+
+Sentence Transformers converts text into vectors called embeddings that capture semantic meaning.
+Allowing you to compare text based on meaning rather than just matching keywords.
+
+Dot Product Similarity: Calculates the sum of the products of corresponding vector elements. Higher scores indicate stronger alignment, but scores are affected by vector magnitude.
+
+Cosine Similarity: Measures the cosine of the angle between two vectors, focusing on their direction rather than magnitude. Higher values indicate more similar directions. Commonly used in semantic search and RAG.
+
+Euclidean Distance (L2): Measures the straight-line distance between two vectors. Smaller distances indicate closer vectors.
+
+Manhattan Distance (L1): Calculates the sum of the absolute differences between corresponding vector elements. Smaller distances indicate closer vectors.
