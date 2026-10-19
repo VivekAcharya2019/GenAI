@@ -1,0 +1,24 @@
+HNSW(Hierarchical Navigable Small World) index: It is an approximate nearest-neighbor (ANN) search algorithm that organizes vectors into a graph to find nearby vectors efficiently.
+
+HNSW works roughly as follows:
+1. Build a graph: Connect each vector to selected neighboring vectors.
+2. Create hierarchical layers: Upper layers contain fewer nodes and enable long-range navigation; lower layers contain more nodes and support finer-grained search.
+3. Start at an entry point: Begin searching from a node in the upper layer.
+4. Navigate toward better candidates: Move to connected nodes that are closer to the query.
+5. Search lower layers: Refine the candidate set until the algorithm finds the nearest neighbors it can identify within its search budget.
+6. Return top-k results: Return the best candidates found.
+
+dimension = chunk_embeddings.shape[1]
+index = faiss.IndexHNSWFlat(dimension, 32)
+index.hnsw.efConstruction = 200
+index.hnsw.efSearch = 64
+index.add(chunk_embeddings)
+distances, indices = index.search(query_embedding, k=3)
+
+Here:
+- 32 is M, the graph connectivity parameter that controls how many neighbors are maintained per node, approximately.
+- efConstruction = 200 controls the breadth of the candidate search while building the graph. A larger value generally improves graph quality at the cost of build time.
+- efSearch = 64 controls the breadth of the search at query time. Increasing it generally improves recall but increases query latency.
+
+HNSW is an approximate nearest-neighbor indexing algorithm. It doesn't change the embedding generation process; it organizes vectors into a hierarchical graph to accelerate similarity search, trading some search accuracy for improved performance.
+

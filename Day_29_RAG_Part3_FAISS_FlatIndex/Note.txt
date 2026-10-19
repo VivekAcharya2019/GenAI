@@ -1,0 +1,8 @@
+FAISS(Facebook AI Similarity Search) is a Python library by Meta for efficient Similarity Search and clustering of dense vectors. It provides optimized vector indexing and search methods to make finding the nearest vectors faster, perticularly for large datasets. IndexFlatL2, IndexFlatIP, IndexHNSWFlat, IndexIVFFlat
+
+FAISS need vecctors in float32, using numpy lib to convert vectors float 32 data types, default dtype is 64 bit for most of the embedding model.
+
+pickle is a built-in Python library used to serialize and deserialize Python objects, used for i/o operations, read write files as binaries. It lets you save an object to a file and load it back later without recreating it from scratch.
+
+
+

@@ -1,7 +1,9 @@
 NumPy (Numerical Python) is a Python library used for efficient numerical computing. It provides powerful data structures and mathematical operations for working with numbers, arrays, matrices, and multidimensional data.
 
-Sentence Transformers converts text into vectors called embeddings that capture semantic meaning.
-Allowing you to compare text based on meaning rather than just matching keywords.
+Sentence Transformers is a Python library for generating text embeddings and computing similarity between vectors.
+Sentence Transformers supports hugging face models by default
+OpenAI embedding models: Not directly through SentenceTransformer() in the usual workflow, Use the OpenAI API or a compatible integration
+Ollama embedding models: Not directly through SentenceTransformer() in the usual workflowUse Ollama's embedding API or a compatible integration
 
 Dot Product Similarity: Calculates the sum of the products of corresponding vector elements. Higher scores indicate stronger alignment, but scores are affected by vector magnitude.
 
